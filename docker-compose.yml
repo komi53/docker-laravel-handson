@@ -1,0 +1,6 @@
+version: "3.8"
+services:
+  app: php_practice #任意の名前
+    build: ./infra/php #作業ディレクトリの指定
+    volumes:
+      - ./backend:/work #コンテナ側へマウントしたい時に指定
